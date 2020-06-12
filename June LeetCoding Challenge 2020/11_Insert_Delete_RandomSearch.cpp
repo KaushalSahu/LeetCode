@@ -23,7 +23,7 @@ public:
         int pos = index[val];
         num[pos] = num[num.size() - 1];
         index[num[pos]] = pos;
-        num.erase(val);
+        index.erase(val);
         num.pop_back();
         return true;
     }
